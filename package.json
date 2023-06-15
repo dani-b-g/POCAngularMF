@@ -10,7 +10,11 @@
     "mf-shell": "ng s mf-shell",
     "mf-shopping": "ng s mf-shopping",
     "mf-payment": "ng s mf-payment",
-    "all": "npm-run-all --parallel mf-shell mf-shopping mf-payment"
+    "mf-shell-build": "ng build mf-shell",
+    "mf-shopping-build": "ng build mf-shopping",
+    "mf-payment-build": "ng build mf-payment",
+    "all": "npm-run-all --parallel mf-shell mf-shopping mf-payment",
+    "build-all": "npm-run-all --parallel mf-shell-build mf-shopping-build mf-payment-build"
   },
   "private": true,
   "dependencies": {
