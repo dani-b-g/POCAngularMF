@@ -17,6 +17,7 @@ module.exports = withModuleFederationPlugin({
   remotes: {
     mfShopping: `http://${ipDocker}:4201/remoteEntry.js`,
     mfPayment: `http://${ipDocker}:4202/remoteEntry.js`,
+    mfAuth: `http://${ipDocker}:4203/remoteEntry.js`,
   },
 
   shared: {

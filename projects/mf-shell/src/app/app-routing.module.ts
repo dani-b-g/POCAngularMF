@@ -5,12 +5,17 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () =>
-      import('mfShopping/ProductsModule').then((m) => m.ProductsModule),
+      import('mfShopping/ProductsModule').then((s) => s.ProductsModule),
   },
   {
     path: 'payment',
     loadComponent: () =>
-      import('mfPayment/PaymentComponent').then((c) => c.PaymentComponent),
+      import('mfPayment/PaymentComponent').then((parent) => parent.PaymentComponent),
+  },
+  {
+    path: 'auth',
+    loadComponent: () =>
+      import('mfAuth/AuthComponent').then((a) => a.AuthComponent),
   },
 ];
 
