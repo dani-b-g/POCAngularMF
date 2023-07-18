@@ -5,7 +5,8 @@
     "paths": {
       "@commons-lib": [
         "projects/commons-lib/src/public-api.ts"
-      ]
+      ],
+      "@env": ["projects/mf-shell/src/environments/environment.ts"]
     },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,

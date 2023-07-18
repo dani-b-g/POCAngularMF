@@ -17,5 +17,5 @@ module.exports = withModuleFederationPlugin({
       requiredVersion: "auto",
     }),
   },
-  sharedMappings: ["@commons-lib"],
+  sharedMappings: ["@commons-lib"]
 });

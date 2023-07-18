@@ -1,9 +1,12 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 // import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { AuthComponent } from './auth/auth.component';
+import { AuthModule } from "./auth/auth.module";
+
 
 
 @NgModule({
@@ -12,9 +15,15 @@ import { AuthComponent } from './auth/auth.component';
   ],
   imports: [
     BrowserModule,
-    AuthComponent
+    AuthComponent,
+    HttpClientModule,
+    AuthModule
+  
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  exports: [AuthComponent],
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  
 })
 export class AppModule { }
