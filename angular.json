@@ -63,10 +63,16 @@
 							"vendorChunk": true,
 							"extractLicenses": false,
 							"sourceMap": true,
-							"namedChunks": true
+							"namedChunks": true,
+							"fileReplacements": [
+								{
+									"replace": "projects/mf-shell/src/environments/environment.ts",
+									"with": "projects/mf-shell/src/environments/environment.development.ts"
+								}
+							]
 						}
 					},
-					"defaultConfiguration": "production"
+					"defaultConfiguration": "development"
 				},
 				"serve": {
 					"builder": "ngx-build-plus:dev-server",

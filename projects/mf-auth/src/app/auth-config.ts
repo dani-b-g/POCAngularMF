@@ -9,5 +9,6 @@ export const authCodeFlowConfig: AuthConfig = {
   responseType: environment.auth_config.responseType,
   showDebugInformation: environment.auth_config.showDebugInformation,
   customQueryParams: environment.auth_config.customQueryParams,
+  requireHttps: false, // Permite HTTP sin TLS
   scope:'offline_access'
 };
