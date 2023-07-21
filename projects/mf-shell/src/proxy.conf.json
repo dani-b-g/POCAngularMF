@@ -1,0 +1,12 @@
+{
+    "/api/*": {
+        "target": "http://course-openapi.apps.giss.int.portal.ss",
+        "secure": false,
+        "logLevel": "debug",
+        "verbose": true,
+        "changeOrigin": true,
+        "pathRewrite": {
+            "^/api/": ""
+        }
+    }
+}
