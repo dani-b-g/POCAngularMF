@@ -10,7 +10,7 @@ export class AnimeService {
 
   getAnimes(): Observable<IProductCard[]> {
     return this._httpClient
-      .get<IResponseAnime>('https://api.jikan.moe/v4/anime?q=toradora&sfw')
+      .get<IResponseAnime>('https://api.jikan.moe/v4/anime?q=dororo&sfw')
       .pipe(
         map((response) => {
           return response.data
